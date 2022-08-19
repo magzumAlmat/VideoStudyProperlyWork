@@ -20,6 +20,14 @@ const productReducer = (state = initState, action) => {
         case 'DELETE_ERROR':
             console.log('product delete error', action.err);
             return state;
+
+
+            case 'UPDATE_PRODUCT':
+                console.log('updated product', action.product);
+                return state;
+            case 'UPDATE_PRODUCT_ERROR':
+                console.log('update product error', action.err);
+                return state;
         default:
             return state;
     }

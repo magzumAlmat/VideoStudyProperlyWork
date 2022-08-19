@@ -7,7 +7,9 @@ import { Redirect } from "react-router-dom";
 import CustomSelect from "./Select";
 // import { Category } from '@material-ui/icons';
 import { createProductAction } from "..//../store/actions/productActions";
-import firebase from "firebase";
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+
 import { storage } from "../../config/fbConfig";
 
 const options = [
@@ -44,7 +46,7 @@ class CreateProject extends Component {
     price: 0,
     sizes: [],
     defaultQty: 0,
-
+    moderated:false,
     url: "",
     urlVideo: "",
   };
@@ -338,6 +340,8 @@ class CreateProject extends Component {
             <input type="number" id="price" onChange={this.handleChange} />
           </div>
 
+     
+
           <div className="input-field">
             <label htmlFor="default qty">default qty</label>
             <input
@@ -346,6 +350,8 @@ class CreateProject extends Component {
               onChange={this.handleChange}
             />
           </div>
+
+
           <br />
           <br />
 {/* 

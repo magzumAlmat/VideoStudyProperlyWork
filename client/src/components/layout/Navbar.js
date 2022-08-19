@@ -35,7 +35,7 @@ const Navbar = (props) => {
                 {/* <CartIcon/> */}
                 {links}  
                 
-                <CartIcon />
+                {/* <CartIcon /> */}
               
                
                 

@@ -13,7 +13,7 @@ import {Alert} from 'reactstrap'
 
 import { firestoreConnect } from 'react-redux-firebase';
 import { doc, getDoc } from "firebase/firestore";
-import firebase from 'firebase/app';
+import * as firebase from 'firebase';
 import 'firebase/firestore';
 // import firebase  from '..//../config/fbConfig';
 import { createOrderAction } from '../../store/actions/createOrderAction';

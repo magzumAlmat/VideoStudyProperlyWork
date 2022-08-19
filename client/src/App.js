@@ -20,6 +20,8 @@ import CreateProduct from './components/projects/CreateProduct';
 import CreateOrder from './components/layout/CreateOrder';
 import showOrders from './components/projects/showOrders';
 import ProductDetails from './components/projects/ProductDetails';
+import ModerateDashboard from './components/projects/ModerateDashboard';
+import ModerateProductEntity from './components/projects/ModerateProductEntity';
 var selectedTab;
 class App extends Component {
   render() { 
@@ -40,6 +42,9 @@ class App extends Component {
             <Route path='/project/:id/edit' component={EditProject} />
             <Route path='/profile' component={Profile} />
             <Route path='/products' component={Products} />
+            <Route path='/moderate' component={ModerateDashboard} />
+
+            <Route path='/moderateproductentity' component={ModerateProductEntity} />
 
             <Route path='/cart' component={Cart} curTab={selectedTab}/>
             <Route path='/createorder' component={CreateOrder} />

@@ -133,11 +133,11 @@ class Product extends Component {
 
             </CardText>
           
-            <Button
+            {/* <Button
                 className="btn-custom"
                 onClick={this.addClick.bind(this, product)}>
                 В корзину
-             </Button>
+             </Button> */}
              
             
 
@@ -149,6 +149,8 @@ class Product extends Component {
             }>
                    <Button  className="btn-custom">  Подробнее </Button>
             </Link>
+
+
 
           </CardBody>
           {/* <div className="card">

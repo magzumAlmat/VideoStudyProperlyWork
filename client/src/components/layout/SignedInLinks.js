@@ -18,6 +18,10 @@ class SignedInLinks extends Component{
             <ul className="right">
                 
                 <li>
+                    <NavLink to="/moderate">MODERATE DASHBOARD</NavLink>
+                </li>
+
+                <li>
                     <NavLink to="/showorders">ALL ORDERS</NavLink>
                 </li>
 
